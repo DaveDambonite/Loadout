@@ -12,8 +12,14 @@ Left hand: weapon|shield|spell|unarmed|torch
 Right hand: weapon|spell|unarmed
 Shout: shout|power
 
-Currently, ammo and torches are not supported because of papyrus limitations. 
+Should now support saving ammo and torches
 /;
+
+;Time measuring
+;float startTime = Utility.getCurrentRealTime()
+;  <THE CODE>
+;float endTime = Utility.getCurrentRealTime()
+;Debug.trace("Description " + (1000*(endTime - startTime)) as int)  
 
 
 ; -----------------------------------------------------------
@@ -32,12 +38,11 @@ import DeazurainUtility
 
 DeazurainUtility property Dutil auto
 FormList[] property loadouts auto
+FormList property loadoutCurrent auto
 
 Form[] loadoutLeftHand
 Form[] loadoutRightHand
 Form[] loadoutShout ; Contains a shout or power
-
-bool keyStateStickRight = false ; nasty fix
 
 float version = 0.0
 
@@ -62,19 +67,17 @@ endfunction
 function saveLoadout(int i)
   dbg("Saving loadout " + i + "...", true)
 
-  ;float startTime = Utility.getCurrentRealTime()
-  
   Actor p = Game.getPlayer()
-  FormList loadout = loadouts[i]
-  loadout.revert()
   
-  ; Get apparel
-  int n = 0; I used to use n as an array index
-  int mask = 1
-  while n < 31
-    loadout.addForm(p.getWornForm(mask)) ; 'None' objects won't be added
-    n += 1
-    mask *= 2
+  FormList loadout = loadouts[i]
+  Formlist current = LoadoutCurrent
+
+  ; Lets hope the equipment doesn't change :3
+  loadout.revert()
+  int n = current.getSize()
+  while n
+    n -= 1
+    loadout.addForm(current.getAt(n))
   endwhile
   
   ; Special cases
@@ -82,62 +85,48 @@ function saveLoadout(int i)
   loadoutLeftHand[i] = getEquippedFormLeftHand(p)
   loadoutShout[i] = getEquippedShoutOrPower(p)
   
-  ; Add time info
-  ;float endTime = Utility.getCurrentRealTime()
   dbg("Saved current loadout to " + i, true)
 endfunction
 
 function restoreLoadout(int i)
   dbg("Restoring loadout " + i + "...", true)
-  ;float startTime = Utility.getCurrentRealTime()
-  
+
   Actor p = Game.GetPlayer()
-  FormList loadout = loadouts[i]
-  
-  int n = loadout.getSize()
-  p.unequipAll()
-  
-  ; Equip apparel
-  while n
-    n -= 1
-    ;/
-    Form f = loadout.getAt(n)
-    if (f.getType() == 26) ; armor
-      Armor a = f as Armor
-      Debug.trace("Armor: " + a.getName())
-      Enchantment e = a.getEnchantment();
-      if e
-        int ne = e.getNumEffects()
-        while ne
-          ne -= 1
-          float effectMagnitude = e.getNthEffectMagnitude(ne)
-          MagicEffect m = e.getNthEffectMagicEffect(ne)
-          string effectName = m.getName()
-          Debug.trace(" - " + effectName + " (" + effectMagnitude + ")")
-        endwhile
-      endif
-    endif
-    /;
-    p.equipItemEx(loadout.getAt(n))
-  endwhile
-  
-  ; Equip special cases
+
+  ; Equip special cases, does not check if already equipped
   setEquippedFormRightHand(p, loadoutRightHand[i])
   setEquippedFormLeftHand(p, loadoutLeftHand[i])
   setEquippedShoutOrPower(p, loadoutShout[i])
-    
-  ;float endTime = Utility.getCurrentRealTime()
-  ;dbg("Restored loadout from " + i)
-endfunction
 
-string function versionToString(float v)
-  int a = (v * 100) as int ; 2.044 becomes 204
-  int b = a / 100 ; b := 2
-  int c = a - b * 100 ; c := 204 - 200 = 4
-  if c < 10
-    return b + ".0" + c ; return 2.04
-  endif
-  return b + "." + c
+  FormList loadout = loadouts[i]
+  Formlist current = LoadoutCurrent
+  Form f
+  int n
+
+  ; Algorithm idea
+    ; forall x in loadout where x not in equipped
+    ;   equip x
+    ; forall x in equipped where x not in loadout
+    ;   unequip x
+  ; I used to create a buffer for the current equipment
+  ; but that magically added about 50% processing time
+  n = loadout.getSize()
+  while n
+    n -= 1
+    f = loadout.getAt(n)
+    if !current.hasForm(f)
+      p.equipItemEx(f)
+    endif
+  endwhile
+
+  n = current.getSize()
+  while n
+    n -= 1
+    f = current.getAt(n)
+    if !loadout.hasForm(f)
+      p.unequipItemEx(f)
+    endif
+  endwhile
 endfunction
 
 ; -----------------------------------------------------------
@@ -149,13 +138,7 @@ event OnInit()
 endevent
 
 event OnGameLoad()
-  gotoState("Updating")
   dbg("Checking for updates...")
-
-  dbg(Dutil)
-  dbg(Dutil.formTypeAmmo)
-  int x = Dutil.formTypeAmmo
-  dbg(x)
 
   if SKSE.getVersion() < 1 || SKSE.getVersionMinor() < 6 || SKSE.getVersionBeta() < 7
     dbg("Loadout cannot function completely because SKSE needs to be updated!", true)
@@ -192,46 +175,41 @@ event OnGameLoad()
   else
     dbg("Loadout updated from " + versionToString(versionOld) + " to " + versionToString(version), true)
   endif
-  gotoState("")
+  GotoState("Ready")
 endevent
 
-event OnKeyDown(int keyCode)
-  GotoState("Busy") ; only do one thing at once
+state Ready
+  event OnKeyDown(int keyCode)
+    GotoState("Busy") ; only do one thing at once
 
-  if keyCode == Dutil.key0
-    onKeyDownLoadout(0)
-  elseif keyCode == Dutil.key1 || keyCode == Dutil.gamepadLeft
-    onKeyDownLoadout(1)
-  elseif keyCode == Dutil.key2 || keyCode == Dutil.gamepadRight
-    onKeyDownLoadout(2)
-  elseif keyCode == Dutil.key3
-    onKeyDownLoadout(3)
-  elseif keyCode == Dutil.key4
-    onKeyDownLoadout(4)
-  elseif keyCode == Dutil.key5
-    onKeyDownLoadout(5)
-  elseif keyCode == Dutil.key6
-    onKeyDownLoadout(6)
-  elseif keyCode == Dutil.key7
-    onKeyDownLoadout(7)
-  elseif keyCode == Dutil.key8
-    onKeyDownLoadout(8)
-  elseif keyCode == Dutil.key9
-    onKeyDownLoadout(9)
-  endif
-  
-  GotoState("")
-endevent
+    if keyCode == Dutil.key0
+      onKeyDownLoadout(0)
+    elseif keyCode == Dutil.key1 || keyCode == Dutil.gamepadLeft
+      onKeyDownLoadout(1)
+    elseif keyCode == Dutil.key2 || keyCode == Dutil.gamepadRight
+      onKeyDownLoadout(2)
+    elseif keyCode == Dutil.key3
+      onKeyDownLoadout(3)
+    elseif keyCode == Dutil.key4
+      onKeyDownLoadout(4)
+    elseif keyCode == Dutil.key5
+      onKeyDownLoadout(5)
+    elseif keyCode == Dutil.key6
+      onKeyDownLoadout(6)
+    elseif keyCode == Dutil.key7
+      onKeyDownLoadout(7)
+    elseif keyCode == Dutil.key8
+      onKeyDownLoadout(8)
+    elseif keyCode == Dutil.key9
+      onKeyDownLoadout(9)
+    endif
+    
+    GotoState("Ready")
+  endevent
+endstate
 
 state Busy
   event OnKeyDown(int k)
     dbg("I'm busy")
-  endevent
-endstate
-
-state Updating
-  event OnKeyDown(int k)
-  endevent
-  event OnKeyUp(int k, float holdTime)
   endevent
 endstate
