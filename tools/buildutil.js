@@ -36,6 +36,7 @@ buildutil.rmdir = function(dir) {
   }
 };
 
+/* be warned, uses async copy */
 buildutil.copyDir = function(src, dest) {
   buildutil.mkdir(dest);
   var files = fs.readdirSync(src);

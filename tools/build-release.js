@@ -5,6 +5,7 @@ This script is used to archive the Data folder
 var util = require('util');
 var exec = require('child_process').exec;
 var path = require('path');
+var fs = require('fs');
 
 var buildutil = require("./buildutil");
 
@@ -13,10 +14,15 @@ var options = require('../options');
 var archive_directory = 'Data/';
 var output_directory = 'release/';
 var archive_name = 'Loadout_' + options.plugin.version.replace('/\./g', '-') + '.zip';
+var archive_path = path.join(output_directory, archive_name);
 
+// Remove old archive
+fs.unlinkSync(archive_path);
+
+// Create archive command
 var command = buildutil.makecommand('$archiver a $name -r $input', {
   archiver: '../7zip/7za.exe',
-  name: path.join(output_directory, archive_name),
+  name: archive_path,
   input: archive_directory
 });
 
