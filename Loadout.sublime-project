@@ -1,0 +1,27 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+
+	"build_systems":
+	[
+		{
+			"name": "Papyrus",
+			"cmd": ["node", "$project_path/tools/build-papyrus.js", "$file", "$project_path"],
+			"file_regex": "(^.*\\.psc)\\(([0-9]*),([0-9]*)\\)",
+			"selector": "source.papyrus",
+			"working_dir": "${project_path:${folder:${file_path}}}",
+			"shell": true
+		},
+		{
+			"name": "nodejs",
+			"cmd": ["node", "$file"],
+			"selector": "source.js",
+			"working_dir": "${project_path:${folder:${file_path}}}",
+			"shell": true
+		}
+	]
+}

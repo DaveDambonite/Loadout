@@ -1,0 +1,108 @@
+﻿[center][url=https://www.facebook.com/pages/Equip-Item-petition/150020581840717][img]http://oi48.tinypic.com/rusbxs.jpg[/img][/url][/center][size=0px][color=#313131]Petition[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
+I am starting a digital petition to solve a problem, a problem that has limited Skyrim plugin writers in their creativity. I believe that if we can gather enough people that we [/color][color=#d57c1d]can[/color][color=#afafaf] get the attention of Bethesda! Read the full article [url=http://skyrim.nexusmods.com/articles/1152/]here[/url]. 
+
+Thank you in advance on behalf of all the Skyrim modders!
+
+[/color][color=#d57c1d]Note[/color][color=#afafaf]: We moved to facebook to allow better communication and feedback to you, so if you've already endorsed the article I would like to ask you to like the facebook page as well. I'm very sorry that we made this transition so late but the number of views went up to 2000 in a single day!
+
+
+
+
+
+[/color][/size][/font]
+[center][img]http://oi50.tinypic.com/2wd7fd1.jpg[/img][/center]
+[font=Book Antiqua][size=3][color=#afafaf]
+I believe that there is a lot of room for improvement on the Skyrim interface. Just take a look at one of the biggest mods SkyUI which enhances almost every aspect of the Skyrim interface. One system that has been bugging me for a long time is the favorites system and in my eyes, it could definitely be improved. 
+
+Changing my weapons in combat is so unintuitive when you want to equip two different items in your hands. I find myself equipping weapons and spells manually through the favorites menu or the inventory menu far foo often. It is not only troubling to perform these repetitive tasks, it also breaks the intense action when you have to open a menu in the middle of a fight. 
+
+I enjoy putting my carefully collected equipment to their fullest potential. My Necklace of Haggling comes in handy when bartering with my friend Belethor in Whiterun and my Iron boots of Forging make sure that I'm able to forge the finest swords in all of Skyrim. Equipping my bartering outfit or my smithing gear through the apparel menu is a task that I would rather avoid. 
+
+So I started thinking of ways to improve the existing favorite mechanics. What if you could equip entire outfits complete with weapons, spells and shouts instead of single items? Loadout allows you to do just that!
+
+Check out the video by [url=http://www.youtube.com/user/Brodual]Brodual[/url] below or alternatively from [url=http://www.youtube.com/watch?v=psT3pkYEVEs]insane0hflex[/url] to see Loadout in action:
+
+[center][youtube]YyH4vrve1io[/youtube][/center]
+
+
+Loadout is as of 13 April 2013 featured by Skyrim GEMS which, in essence, means that it is a good plugin.
+
+[center][url=http://www.skyrimgems.com][img]http://i.imgur.com/1wXSO.png[/img][/url][/center]
+
+
+
+
+
+[/color][/size][/font]
+[center][img]http://oi50.tinypic.com/10oikow.jpg[/img][/center][size=0px][color=#313131]Usage[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
+My intentions are to make Loadout as efficiently to use as possible. This is why I have chosen to use hotkeys for saving and restoring [i]loadouts[/i]. I will use the term loadout to describe a complete set of apparel, weapons, spells and shouts. There are even some hotbuttons if you will when you use a controller! The keyboard hotkeys work as well when playing Skyrim with a controller mode. 
+
+[center][img]http://oi50.tinypic.com/2wpl46u.jpg[/img][/center]
+
+There are 10 loadout slots available and they can be used through the number 0 to 9 on your keyboard. So to store your loadout in slot 2 press ALT + 2. To equip the loadout stored in slot 2, simply press 2. Slots 1 and 2 can be used as well if you have a controller. Holding the right thumb stick while pressing the left or right arrow button saves your current equipment in slot 1 or 2 respectively. Pressing the arrow buttons without holding the right thumb stick will restore the items. Note that it is possible to use your keyboard in combination with the controller!
+
+I recommend to plan which loadout slot you will use for what purpose. My scheme usually looks like the following: 
+  1: Melee loadout, for example shield and sword. 
+  2: Bow loadout, could put second bow in normal favorites to quickly swap a single weapon. 
+  3: Casting loadout, for example dual wield fireball. 
+  4: Buffing loadout, for example courage, summons, oakflesh. 
+  5: Open. 
+  6: Pretty townsclothes for my roleplaying needs. 
+  7: Bartering gear. 
+  8: Smithing gear. 
+  9: Alchemy gear. 
+  0: Open. 
+The awesome part of Loadout is that you do not need to stick to this configuration. You are free to configure your loadouts however you want!
+
+When you use a weapon, spell or shout only on rare occasions you might not want to reserve loadout slot for it. This why Loadout doesn't replace the old favorites menu. Having hotkeys bound to the original favorites will not work properly in combination with Loadout. These conflicts are harmless though. 
+
+
+
+
+[/color][/size][/font]
+[center][img]http://oi50.tinypic.com/x0r2hc.jpg[/img][/center][size=0px][color=#313131]Installation[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
+Installing Loadout is very easy. There is one thing though that might make it a bit uncomfortable, Loadout depends on SKSE. Follow the instructions in the SKSE readme that is available on the site if you do not already have SKSE installed. 
+
+[b]Requirements[/b]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Make sure that you have the latest version of [url=http://skse.silverlock.org/][i]Skyrim Script Extender[/i] (SKSE)[/url] installed. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Make sure that you have the latest version of [url=http://skyrim.nexusmods.com/mods/modmanager/][i]Nexus Mod Manager[/i] (NMM)[/url] installed. 
+
+[b]Installation steps[/b]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Empty your favorites list in Skyrim and save. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Download the latest version of Loadout. To do this, go to the [i]Files[/i] tab at the top of this page and then click on 'Download with Manager'. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Activate the plugin in NMM. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Launch Skyrim via SKSE, I believe this can be done via NMM. 
+
+
+
+
+[/color][/size][/font]
+[center][img]http://oi50.tinypic.com/eq85s7.jpg[/img][/center][size=0px][color=#313131]Requests[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Wait for Bethesda and the SKSE developers to reply about the custom enchants not working with equipping items through scripting. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Provide a way to configure hotkeys. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Remap controller keys and rewire code to open up 7 or 8 loadout slots. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Find or create a fix for the complete unequip before equip problem, see [url=http://forums.nexusmods.com/index.php?/topic/964036-questions/?p=7783546]this thread[/url] for details. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Improve save speed by only quering limited number of item slots and provide an option to enable or disable this as it may break compatibility with other mods. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Add option to disable Loadout notification messages. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Put source code online. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Get torches and arrows to work, see [url=http://forums.bethsoft.com/topic/1454005-saving-and-restoring-equipped-items/page__view__findpost__p__22498192]this thread[/url] for details.   
+
+
+
+
+[/color][/size][/font]
+[center][img]http://oi47.tinypic.com/2qn2i9x.jpg[/img][/center][size=0px][color=#313131]Acknowledgements[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
+A big thanks to the folks on [url=http://forums.bethsoft.com/]the bethesda forums[/url], to the people who created and update the [url=http://www.creationkit.com/]creation kit wiki[/url] and to the [url=http://skse.silverlock.org/]SKSE[/url] team for their amazing work. Also a big thanks to you for providing feedback on this plugin. 
+
+Some people who helped me out in particular: 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] [url=http://forums.bethsoft.com/user/651997-mojo22/]mojo22[/url]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] [url=http://forums.bethsoft.com/user/817223-dienestoo/]DienesToo[/url]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] [url=http://forums.bethsoft.com/user/183997-smkviper/]SmkViper[/url]
+These guys enabled me to write the basis of this plugin in a short time. 
+
+Thank you Bethesda for creating this awesome game and providing us the means to mod it. 
+
+Enjoy everyone!
+
+[b]Deazurain[/b]
+[/color][/size][/font]

@@ -1,0 +1,23 @@
+﻿# Loadout 0.11
+Discovered the equipItem problem. Trying to contact Bethesda and SKSE authors because the problem can't be solved in papyrus. 
+Added version check for SKSE because a lot of people were saying that Loadout could only save, most of the time this is because they have an old SKSE version. 
+
+# Loadout 0.10
+I gained access to a PS3 controller and installed MotioninJoy to simulate a 360 controller on my PC to test my code. 
+Using a controller with Loadout is now possible:
+  Save to loadout 1: Right analog stick + D-pad left
+  Save to loadout 1: Right analog stick + D-pad right
+  Equip loadout 1: D-pad left
+  Equip loadout 2: D-pad right
+
+# Loadout 0.09
+Disabled hotkeys when the game is paused which means that they dont work anymore in menus that pause the game. 
+Testing xbox controller support:
+  Save to loadout 1: Left analog stick + D-pad left
+  Save to loadout 2: Left analog stick + D-pad right
+  Equip loadout 1: D-pad left
+  Equip loadout 2: D-pad right
+
+# Loadout 0.07
+This was published as 0.07 but it was actually 0.08
+Initial release

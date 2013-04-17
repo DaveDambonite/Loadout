@@ -1,0 +1,10 @@
+{
+    "directory": {
+        "skyrim": "C:/Program Files (x86)/Steam/steamapps/common/skyrim/"
+    },
+    "plugin": {
+        "name": "Loadout",
+        "version": "0.12",
+        "filename": "DeazurainLoadout"
+    }
+}

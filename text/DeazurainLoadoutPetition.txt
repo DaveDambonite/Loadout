@@ -1,0 +1,25 @@
+[center][url=https://www.facebook.com/pages/Equip-Item-petition/150020581840717][img]http://oi46.tinypic.com/289h08w.jpg[/img][/url][/center]
+I am starting a digital petition to solve a problem, a problem that has limited Skyrim plugin writers in their creativity. I believe that if we can gather enough people that we [color=#d57c1d]can get the attention of Bethesda[/color]! Bear with me and please read this notice. 
+
+Loadout has become a fast growing plugin in a very short time. Yesterday I calculated that the Loadout page has been visited 5 times per minute in the first 5 days after it was launched! That is why I'm extremely motivated to update this plugin and put my best effort towards fixing any problems and adding requested features. There is one hurdle however the prevents me and many other modders from doing so. 
+
+There is one problem that has been known for a long time: items that have been enchanted do not properly apply their effects to the player if the item is equipped through a script. This is caused by the fact that player customized items have to be handled a bit differently [i]behind the scenes[/i] than items that you normally find in the game to allow the flexibility of enchanting, renaming and tampering them. There is [color=#d57c1d]no way to circumvent[/color] this problem using [i]papyrus[/i], the scripting language used by plugin writers like me. 
+
+This problem could, and in my opinion should, be fixed by Bethesda since the 'equip item' function should work for any equippable item as it appears to. We have to [color=#d57c1d]make the effort[/color] required to fix this problem [color=#d57c1d]benificial to Bethesda[/color] in some way. I'm sure that a lot of the programmers at Bethesda would love to work on Skyrim but there are obviously limited resources that Bethesda can spend, they are a company and companies need to make a profit. 
+
+That is why I want to start a digital petition to show that Bethesda will be pleasing an enormous amount of people and making them love the company even more than before. [color=#d57c1d]Comment or endorse[/color], preferably on [url=https://www.facebook.com/pages/Equip-Item-petition/150020581840717]facebook[/url], and let your voice be heard! Updates about the status of our cause will be posted on facebook in the future!
+
+[i]"Terrible and powerful Bethesda! We, your unworthy servants, give praise! For only through your grace and benevolence may we truly reach enlightenment! And deserve our praise you do, for we are one!"[/i]
+
+[b]Deazurain[/b]
+
+[color=#d57c1d]Update 5 (16th April)[/color]: The facebook page received a visual upgrade [color=#d57c1d]thanks to the lovely community[/color]! I'm very exited on the progress so far. 
+[color=#d57c1d]Update 4 (15th April)[/color]: I wrote a [url=https://www.facebook.com/notes/equip-item-petition/the-origins/150037481839027]note[/url] on the history of this petition. 
+[color=#d57c1d]Update 3 (15th April)[/color]: We are [url=https://www.facebook.com/pages/Equip-Item-petition/150020581840717]moving to facebook[/url], see [url=http://forums.nexusmods.com/index.php?/topic/968360-equipitem-petition/?p=7830700]this thread[/url] for my reasoning. 
+
+[color=#d57c1d]Update 2 (14th April)[/color]: This petition is officially supported by [url=http://www.skyrimgems.com/]Skyrim GEMS[/url]! I am overjoyed, check GEMS out if you ever feel lost because of the many thousands of mods that are released. [i]"GEMS (Gameplay Enhancement Mods for Skyrim) is a 1-page, quick-reference catalog of 800+ lore-friendly mods on the NEXUS and the Steam Workshop that enhance gameplay. "[/i]
+[center][url=http://www.skyrimgems.com][img]http://i.imgur.com/1wXSO.png[/img][/url][/center]
+
+[color=#d57c1d]Update 1 (14th April)[/color]: I know it's not the prettiest but I created a quick banner you can use to show that you support this cause. 
+[center][url=http://skyrim.nexusmods.com/articles/1152/][img]http://oi45.tinypic.com/116svaf.jpg[/img][/url][/center]
+[color=#d57c1d]BBCode[/color] (remove X's): [X center][X url=http://skyrim.nexusmods.com/articles/1152/][X img]http://oi45.tinypic.com/116svaf.jpg[/img][/url][/center]
