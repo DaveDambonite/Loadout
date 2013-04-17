@@ -153,8 +153,8 @@ event OnGameLoad()
     loadoutRightHand = new Form[10]
     loadoutShout = new Form[10]
   endif
-  if version < 0.12
-    version = 0.12
+  if version < 1.00
+    version = 1.00
     UnregisterForAllKeys(); unregister old keybindings
     RegisterForKey(Dutil.key0)
     RegisterForKey(Dutil.key1)

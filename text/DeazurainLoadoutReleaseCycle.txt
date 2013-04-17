@@ -1,0 +1,24 @@
+Release cycle
+
+1. Update options.json version
+2. Update DeazurainLoadoutQuest.psc version in script
+3. Loop
+	3.a. Grab a request or issue
+	3.b. Fix or create the heck out of it
+	3.c. Test the code
+	3.d. Edit changelog
+	3.e. Have a break
+4. Remove all the Deazurain* Papyrus from the Skyrim folder
+5. Build ALL the scripts
+6. Final test run
+7. Pull the .esp file from Skyrim folder
+8. Create archive
+9. Edit plugin description
+10. Commit changelog and description
+11. Tag version
+12. Push to github
+13. Upload changelog
+14. Glance over changelog article to spot errors
+15. Upload description
+16. Glance over plugin page to spot errors
+17. Upload release

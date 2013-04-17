@@ -17,7 +17,9 @@ var archive_name = 'Loadout_' + options.plugin.version.replace('/\./g', '-') + '
 var archive_path = path.join(output_directory, archive_name);
 
 // Remove old archive
-fs.unlinkSync(archive_path);
+try {
+  fs.unlinkSync(archive_path);
+} catch (e) {}
 
 // Create archive command
 var command = buildutil.makecommand('$archiver a $name -r $input', {

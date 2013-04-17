@@ -59,6 +59,7 @@ When you use a weapon, spell or shout only on rare occasions you might not want 
 
 
 
+
 [/color][/size][/font]
 [center][img]http://oi50.tinypic.com/x0r2hc.jpg[/img][/center][size=0px][color=#313131]Installation[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
 Installing Loadout is very easy. There is one thing though that might make it a bit uncomfortable, Loadout depends on SKSE. Follow the instructions in the SKSE readme that is available on the site if you do not already have SKSE installed. 
@@ -76,16 +77,14 @@ Installing Loadout is very easy. There is one thing though that might make it a 
 
 
 
+
 [/color][/size][/font]
 [center][img]http://oi50.tinypic.com/eq85s7.jpg[/img][/center][size=0px][color=#313131]Requests[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
 This section contains requested features and confirmed bugs. Check out [url=http://skyrim.nexusmods.com/articles/1160/]the changelog[/url] to see what has already been fixed. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Ensure that [url=http://skyrim.nexusmods.com/articles/1152/]the petition[/url] gets mass attention. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Provide a way to configure hotkeys. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Remap controller keys and rewire code to open up 7 or 8 loadout slots. 
-[img]http://oi45.tinypic.com/290smkx.jpg[/img] Find or create a fix for the complete unequip before equip problem, see [url=http://forums.nexusmods.com/index.php?/topic/964036-questions/?p=7783546]this thread[/url] for details. 
-[img]http://oi45.tinypic.com/290smkx.jpg[/img] Improve save speed by only quering limited number of item slots and provide an option to enable or disable this as it may break compatibility with other mods. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Add option to disable Loadout notification messages. 
-[img]http://oi45.tinypic.com/290smkx.jpg[/img] Get torches and arrows to work, see [url=http://forums.bethsoft.com/topic/1454005-saving-and-restoring-equipped-items/page__view__findpost__p__22498192]this thread[/url] for details.   
 
 
 

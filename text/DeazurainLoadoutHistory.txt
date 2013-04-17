@@ -1,9 +1,20 @@
 ﻿[font=Calibri]
+[b][color=#d57c1d]Loadout 1.00[/color][/b]
+[i][color=#c2c2c2]Summary:[/color][/i]
+Hosted Loadout on github. Created building tools with nodejs that I can trigger with Sublime Text 2. Did a complete rewrite of the equipment saving and restoring mechanics. Split the main script into Loadout specific code and a utility script. 
+[i][color=#c2c2c2]Changes:[/color][/i]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Hosted the [url=https://github.com/DaveDambonite/Loadout]source code[/url]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Found a way to save torches and ammunition such as arrows in a loadout
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Only the necessary changes are made now when restoring a loadout
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Sped up loadout saving
+
+
 [b][color=#d57c1d]Loadout 0.11[/color][/b]
 [i][color=#c2c2c2]Summary:[/color][/i]
 Confirmed the EquipItem problem, started [url=http://skyrim.nexusmods.com/articles/1152/]a petition[/url]. Trying to contact Bethesda and SKSE authors because the problem can't be solved in papyrus. Added version check for SKSE because a lot of people were saying that Loadout could only save, most of the time this is because they have an old SKSE version. 
 [i][color=#c2c2c2]Changes:[/color][/i]
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Added SKSE version check
+
 
 [b][color=#d57c1d]Loadout 0.10[/color][/b]
 [i][color=#c2c2c2]Summary:[/color][/i]
@@ -15,6 +26,7 @@ I gained access to a PS3 controller and installed MotioninJoy to simulate a 360 
 [i][color=#c2c2c2]Changes:[/color][/i]
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Added gamepad controls
 
+
 [b][color=#d57c1d]Loadout 0.09[/color][/b]
 [i][color=#c2c2c2]Summary:[/color][/i]
 Disabled hotkeys when the game is paused which means that they dont work anymore in menus that pause the game. Testing xbox controller support since I have no controller to test it myself:
@@ -25,6 +37,7 @@ Disabled hotkeys when the game is paused which means that they dont work anymore
 [i][color=#c2c2c2]Changes:[/color][/i]
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Disabled Loadout hotkeys when the game is paused
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Added gamepad testcode
+
 
 [b][color=#d57c1d]Loadout 0.07[/color][/b]
 [i][color=#c2c2c2]Summary:[/color][/i]
