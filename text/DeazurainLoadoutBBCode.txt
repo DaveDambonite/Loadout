@@ -41,7 +41,7 @@ My intentions are to make Loadout as efficiently to use as possible. This is why
 
 There are 10 loadout slots available and they can be used through the number 0 to 9 on your keyboard. So to store your loadout in slot 2 press ALT + 2. To equip the loadout stored in slot 2, simply press 2. Slots 1 and 2 can be used as well if you have a controller. Holding the right thumb stick while pressing the left or right arrow button saves your current equipment in slot 1 or 2 respectively. Pressing the arrow buttons without holding the right thumb stick will restore the items. Note that it is possible to use your keyboard in combination with the controller!
 
-I recommend to plan which loadout slot you will use for what purpose. My scheme usually looks like the following: 
+I recommend to plan which loadout slot you will use for what purpose. This makes sure that you use Loadout to its fullest potential. It provides so much flexibility that you can get very far with a little creative thinking. My scheme usually looks like the following: 
   1: Melee loadout, for example shield and sword. 
   2: Bow loadout, could put second bow in normal favorites to quickly swap a single weapon. 
   3: Casting loadout, for example dual wield fireball. 
@@ -78,14 +78,25 @@ Installing Loadout is very easy. There is one thing though that might make it a 
 
 [/color][/size][/font]
 [center][img]http://oi50.tinypic.com/eq85s7.jpg[/img][/center][size=0px][color=#313131]Requests[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
-[img]http://oi45.tinypic.com/290smkx.jpg[/img] Wait for Bethesda and the SKSE developers to reply about the custom enchants not working with equipping items through scripting. 
+This section contains requested features and confirmed bugs. Check out [url=http://skyrim.nexusmods.com/articles/1160/]the changelog[/url] to see what has already been fixed. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Ensure that [url=http://skyrim.nexusmods.com/articles/1152/]the petition[/url] gets mass attention. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Provide a way to configure hotkeys. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Remap controller keys and rewire code to open up 7 or 8 loadout slots. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Find or create a fix for the complete unequip before equip problem, see [url=http://forums.nexusmods.com/index.php?/topic/964036-questions/?p=7783546]this thread[/url] for details. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Improve save speed by only quering limited number of item slots and provide an option to enable or disable this as it may break compatibility with other mods. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Add option to disable Loadout notification messages. 
-[img]http://oi45.tinypic.com/290smkx.jpg[/img] Put source code online. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Get torches and arrows to work, see [url=http://forums.bethsoft.com/topic/1454005-saving-and-restoring-equipped-items/page__view__findpost__p__22498192]this thread[/url] for details.   
+
+
+
+
+
+[/color][/size][/font]
+[center][img]http://oi50.tinypic.com/20rk3cy.jpg[/img][/center][size=0px][color=#313131]Resources[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
+I have listed some additional resources you might find useful here. 
+[url=http://skyrim.nexusmods.com/articles/1160/][img]http://i1068.photobucket.com/albums/u456/deazurain/link_changelog.png[/img][/url][url=https://github.com/DaveDambonite/Loadout][img]http://i1068.photobucket.com/albums/u456/deazurain/link_github.png[/img][/url]
+[url=http://skyrim.nexusmods.com/articles/1152/][img]http://i1068.photobucket.com/albums/u456/deazurain/link_petition.png[/img][/url]
+
 
 
 

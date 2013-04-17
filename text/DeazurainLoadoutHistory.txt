@@ -1,23 +1,32 @@
-﻿# Loadout 0.11
-Discovered the equipItem problem. Trying to contact Bethesda and SKSE authors because the problem can't be solved in papyrus. 
-Added version check for SKSE because a lot of people were saying that Loadout could only save, most of the time this is because they have an old SKSE version. 
+﻿[font=Calibri]
+[b][color=#d57c1d]Loadout 0.11[/color][/b]
+[i][color=#c2c2c2]Summary:[/color][/i]
+Confirmed the EquipItem problem, started [url=http://skyrim.nexusmods.com/articles/1152/]a petition[/url]. Trying to contact Bethesda and SKSE authors because the problem can't be solved in papyrus. Added version check for SKSE because a lot of people were saying that Loadout could only save, most of the time this is because they have an old SKSE version. 
+[i][color=#c2c2c2]Changes:[/color][/i]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Added SKSE version check
 
-# Loadout 0.10
-I gained access to a PS3 controller and installed MotioninJoy to simulate a 360 controller on my PC to test my code. 
-Using a controller with Loadout is now possible:
-  Save to loadout 1: Right analog stick + D-pad left
-  Save to loadout 1: Right analog stick + D-pad right
-  Equip loadout 1: D-pad left
-  Equip loadout 2: D-pad right
+[b][color=#d57c1d]Loadout 0.10[/color][/b]
+[i][color=#c2c2c2]Summary:[/color][/i]
+I gained access to a PS3 controller and installed MotioninJoy to simulate a 360 controller on my PC to test my code. Using a controller with Loadout is now possible:
+ - Save to loadout 1: Right analog stick + D-pad left
+ - Save to loadout 1: Right analog stick + D-pad right
+ - Equip loadout 1: D-pad left
+ - Equip loadout 2: D-pad right
+[i][color=#c2c2c2]Changes:[/color][/i]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Added gamepad controls
 
-# Loadout 0.09
-Disabled hotkeys when the game is paused which means that they dont work anymore in menus that pause the game. 
-Testing xbox controller support:
-  Save to loadout 1: Left analog stick + D-pad left
-  Save to loadout 2: Left analog stick + D-pad right
-  Equip loadout 1: D-pad left
-  Equip loadout 2: D-pad right
+[b][color=#d57c1d]Loadout 0.09[/color][/b]
+[i][color=#c2c2c2]Summary:[/color][/i]
+Disabled hotkeys when the game is paused which means that they dont work anymore in menus that pause the game. Testing xbox controller support since I have no controller to test it myself:
+ - Save to loadout 1: Left analog stick + D-pad left (Didn't work because of Input.isKeyPressed bug)
+ - Save to loadout 2: Left analog stick + D-pad right (Didn't work because of Input.isKeyPressed bug)
+ - Equip loadout 1: D-pad left
+ - Equip loadout 2: D-pad right
+[i][color=#c2c2c2]Changes:[/color][/i]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Disabled Loadout hotkeys when the game is paused
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Added gamepad testcode
 
-# Loadout 0.07
-This was published as 0.07 but it was actually 0.08
-Initial release
+[b][color=#d57c1d]Loadout 0.07[/color][/b]
+[i][color=#c2c2c2]Summary:[/color][/i]
+Initial release. This was published as 0.07 but it was actually 0.08
+[/font]

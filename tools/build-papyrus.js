@@ -1,3 +1,7 @@
+/*
+This script is used by the Papyrus build command defined in Loadout.sublime-project. 
+*/
+
 var util = require('util');
 var exec = require('child_process').exec;
 var path = require('path');
@@ -35,13 +39,13 @@ console.log('')
 // Change working directory to scripts/Source
 process.chdir(skyrim_source);
 
-function arg(name, value) { return value !== undefined ? '-' + name + '="' + value + '"' : '"' + name + '"'; }
-
-var command = [arg(compiler),
-	arg(file), 
-	arg('f', flags), 
-	arg('import', imports), 
-	arg('output', output)].join(' ');
+var command = buildutil.makecommand('$compiler $file -f=$flags -import=$import -output=$output', {
+  'compiler': compiler,
+  'file': file,
+  'flags': flags,
+  'import': imports,
+  'output': output
+});
 
 exec(command, 
   function (error, stdout, stderr) {

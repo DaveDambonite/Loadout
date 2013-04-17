@@ -51,9 +51,23 @@ buildutil.copyDir = function(src, dest) {
     }
   }
 };
- 
-buildutil.copy = function(src, dest) {
-  var oldFile = fs.createReadStream(src);
-  var newFile = fs.createWriteStream(dest);
-  util.pump(oldFile, newFile);
+
+buildutil.copy = function(source, destination, callback) {
+  var i = fs.createReadStream(source);
+  var o = fs.createWriteStream(destination);
+  var c = false;
+  var cb = callback ?
+    function(err) { if (c) { return; } c = true; callback(err); } : 
+    function(err) {};
+  i.on('error', function(err) { cb(err); });
+  o.on('error', function(err) { cb(err); });
+  o.on('finish', function() { cb(null); });
+  i.pipe(o);
 };
+
+buildutil.makecommand = function(command, values) {
+  for(var key in values) {
+    command = command.replace('\$' + key, '"' + values[key] + '"');
+  }
+  return command;
+}
