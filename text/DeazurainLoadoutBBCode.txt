@@ -80,7 +80,7 @@ Installing Loadout is very easy. There is one thing though that might make it a 
 
 [/color][/size][/font]
 [center][img]http://oi50.tinypic.com/eq85s7.jpg[/img][/center][size=0px][color=#313131]Requests[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
-This section contains requested features and confirmed bugs. Check out [url=http://skyrim.nexusmods.com/articles/1160/]the changelog[/url] to see what has already been fixed. 
+This section contains requested features and confirmed bugs. Check out [url=http://skyrim.nexusmods.com/articles/1160/]the changelog[/url] to see what has already been fixed. Report requests or issues preferably [url=https://github.com/DaveDambonite/Loadout/issues]on github[/url] or alternatively on the requests topic which can be found under the forum tab. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Ensure that [url=http://skyrim.nexusmods.com/articles/1152/]the petition[/url] gets mass attention. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Provide a way to configure hotkeys. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Remap controller keys and rewire code to open up 7 or 8 loadout slots. 
