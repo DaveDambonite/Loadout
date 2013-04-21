@@ -1,4 +1,11 @@
 ﻿[font=Calibri]
+[b][color=#d57c1d]Loadout 1.01[/color][/b]
+[i][color=#c2c2c2]Summary:[/color][/i]
+Fixed a problem where the Loadout quest wouldn't start when beginning a new adventure. [url=http://forums.steampowered.com/forums/showthread.php?t=2973655]The phenomenon[/url] is known as the 'Dialog bug'. Save and load the game once after your hands are freed. 
+[i][color=#c2c2c2]Changes:[/color][/i]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Loadout now works when starting a new game while having it enabled. 
+
+
 [b][color=#d57c1d]Loadout 1.00[/color][/b]
 [i][color=#c2c2c2]Summary:[/color][/i]
 Hosted Loadout on github. Created building tools with nodejs that I can trigger with Sublime Text 2. Did a complete rewrite of the equipment saving and restoring mechanics. Split the main script into Loadout specific code and a utility script. 
