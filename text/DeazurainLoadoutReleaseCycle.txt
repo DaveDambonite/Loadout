@@ -12,13 +12,16 @@ Release cycle
 5. Build ALL the scripts
 6. Final test run
 7. Pull the .esp file from Skyrim folder
-8. Create archive
-9. Edit plugin description
-10. Commit changelog and description
-11. Tag version
-12. Push to github
-13. Upload changelog
-14. Glance over changelog article to spot errors
-15. Upload description
-16. Glance over plugin page to spot errors
-17. Upload release
+8. Generate .seq file with creation kit using -GenerateSEQ:pluginname.esp as a launch option in steam
+9. Put the generated file in Data/SEQ/ in the Skyrim folder
+10. Pull the generated file to the Loadout project
+11. Create archive
+12. Edit plugin description
+13. Commit changelog and description
+14. Tag version
+15. Push to github
+16. Upload changelog
+17. Glance over changelog article to spot errors
+18. Upload description
+19. Glance over plugin page to spot errors
+20. Upload release
