@@ -17,11 +17,11 @@ Release cycle
 10. Pull the generated file to the Loadout project
 11. Create archive
 12. Edit plugin description
-13. Commit changelog and description
-14. Tag version
-15. Push to github
-16. Upload changelog
-17. Glance over changelog article to spot errors
-18. Upload description
-19. Glance over plugin page to spot errors
-20. Upload release
+13. Glance over changelog article to spot errors
+14. Upload description
+15. Glance over plugin page to spot errors
+16. Upload release
+17. Commit changelog and description
+18. Tag version
+19. Push to github
+20. Upload changelog
