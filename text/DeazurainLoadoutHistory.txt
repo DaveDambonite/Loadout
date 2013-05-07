@@ -1,4 +1,13 @@
 ﻿[font=Calibri]
+[b][color=#d57c1d]Loadout 1.02[/color][/b]
+[i][color=#c2c2c2]Summary:[/color][/i]
+Multiple people reported that Loadout stopped working for them after the first time. This is a test version of Loadout that registers the keyboard/gamepad events every time you load a savegame. I also added additional debug statements. Enable debugging with the help of [url=http://skyrim.nexusmods.com/articles/1219]this guide[/url]. 
+[i][color=#c2c2c2]Changes:[/color][/i]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Registers event handlers on each load. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Additional debug statements
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Debug log file at [/font][font=monospace]C:/Users/<YOUR NAME>/Documents/My Games/Skyrim/Logs/Script/User/DeazurainLoadout.0.log[/font][font=Calibri]. 
+
+
 [b][color=#d57c1d]Loadout 1.01[/color][/b]
 [i][color=#c2c2c2]Summary:[/color][/i]
 Fixed a problem where the Loadout quest wouldn't start when beginning a new adventure. [url=http://forums.steampowered.com/forums/showthread.php?t=2973655]The phenomenon[/url] is known as the 'Dialog bug'. Save and load the game once after your hands are freed. 

@@ -1,0 +1,49 @@
+[size=5]How to enable [color=#d57c1d]debugging[/color][/size]
+
+
+[size=6]1.[/size]
+Navigate to the following directory where <YOUR USERNAME> is your windows username. 
+[font=monospace][b]
+C:/Users/<YOUR USERNAME>/Documents/My Games/Skyrim
+[/b][/font]
+
+[size=6]2.[/size]
+Open [color=#d57c1d]Skyrim.ini[/color]
+
+[color=#d57c1d]Note:[/color] if you do not trust yourself with .ini files, [color=#d57c1d]make a backup[/color] of the file by copying it.  
+
+
+[size=6]3.[/size]
+Find the section [color=#d57c1d][Papyrus][/color] and make it look like this:
+[code]
+[Papyrus]
+fPostLoadUpdateTimeMS=500.0
+bEnableLogging=1
+bEnableTrace=1
+bEnableProfiling=1
+bLoadDebugInformation=1
+[/code]
+[color=#d57c1d]Note:[/color] changing fPostLoadUpdateTimeMS is not vital. I thought it would be easier to post the full section here. 
+
+
+[size=6]4.[/size]
+Repeat the same steps for the file [color=#d57c1d]SkyrimPrefs.ini[/color] to be sure that the settings take effect. I don't know which file takes precedence. 
+
+
+
+
+
+[size=5]Debugging [url=http://skyrim.nexusmods.com/mods/34593/]Loadout[/url][/size]
+
+
+[size=6]5.[/size]
+The debug log of Loadout can be found in the subdirectory Logs/Script/User so that the full directory path becomes:
+[font=monospace][b]
+C:/Users/<YOUR USERNAME>/Documents/My Games/Skyrim/Logs/Script/User
+[/b][/font]
+The debug log [color=#d57c1d]DeazurainLoadout.0.log[/color] will contain the debug messages from the last Skyrim run. 
+
+[color=#d57c1d]Note:[/color] The debug log will not exist yet if you haven't started Skyrim with SKSE enabled and Loadout activated and loaded a game. 
+
+
+

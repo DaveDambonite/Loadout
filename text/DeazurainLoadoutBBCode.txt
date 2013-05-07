@@ -70,7 +70,7 @@ Installing Loadout is very easy. There is one thing though that might make it a 
 
 [b]Installation steps[/b]
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Empty your favorites list in Skyrim and save. 
-[img]http://oi45.tinypic.com/290smkx.jpg[/img] Download the latest version of Loadout. To do this, go to the [i]Files[/i] tab at the top of this page and then click on 'Download with Manager'. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Download the latest version of Loadout. To do this, go to the [url=http://skyrim.nexusmods.com/mods/34593/?tab=2&navtag=%2Fajax%2Fmodfiles%2F%3Fid%3D34593&pUp=1][i]Files[/i][/url] tab at the top of this page and then click on 'Download with Manager'. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Activate the plugin in NMM. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Launch Skyrim via SKSE, I believe this can be done via NMM. 
 

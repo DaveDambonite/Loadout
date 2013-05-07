@@ -383,7 +383,12 @@ function dbg(string m, bool notification = false) global
   if notification
     Debug.notification(m)
   endif
-  Debug.trace("DeazurainLoadout: " + m)
+  if !Debug.traceUser("DeazurainLoadout", m)
+    Debug.openUserLog("DeazurainLoadout")
+    if !Debug.traceUser("DeazurainLoadout", m)
+      Debug.trace("DeazurainLoadout: " + m)
+    endif
+  endif
 endfunction
 
 ; Converts a two decimal version number to a string

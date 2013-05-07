@@ -1,9 +1,11 @@
 scriptname DeazurainLoadoutEquipment extends ReferenceAlias
 {Keeps track of the player's equipment}
 
+import DeazurainUtility
+
 DeazurainUtility property Dutil auto
 
-Actor player;
+Actor player
 
 FormList property loadoutApparel auto
 
@@ -12,10 +14,11 @@ event OnInit()
 endevent
 
 event OnObjectEquipped(Form object, ObjectReference reference)
-	;Debug.trace("Equipped " + object.getName() + ", type: " + t + ", total equipped items: " + loadoutApparel.getSize())
 	if reference && reference != player
 		return
 	endif
+
+	dbg("Equipped \"" + object.getName() + "\"")
 	
 	int t = object.getType()
 	if t != Dutil.formTypeArmor && \
@@ -31,5 +34,8 @@ event OnObjectUnequipped(Form object, ObjectReference reference)
 	if reference && reference != player
 		return
 	endif
+
+	dbg("Unequipped \"" + object.getName() + "\"")
+
 	loadoutApparel.removeAddedForm(object)
 endevent

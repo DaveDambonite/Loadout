@@ -12,7 +12,8 @@ Repository
 This folder contains the Elder Scrolls Plugin file, the Papyrus script source and the compiled scripts. 
 
 *text/*
-This folder contains the BBCode for the plugin page, the changelog and other articles I wanted to have offline
+This folder contains the BBCode for the plugin page, the changelog and other articles I wanted to have offline. DeazurainLoadoutReleaseCycle.txt might be interesting if you want to work on the project. 
 
 *tools/*
 This folder contains build tools I've written, mostly in nodejs, that can be easily used by the Sublime Text 2 editor. This requires the editor and nodejs. 
+

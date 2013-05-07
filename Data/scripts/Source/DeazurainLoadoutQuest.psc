@@ -156,19 +156,24 @@ event OnGameLoad()
   if version < 1.01
     version = 1.01
     UnregisterForAllKeys(); unregister old keybindings
-    RegisterForKey(Dutil.key0)
-    RegisterForKey(Dutil.key1)
-    RegisterForKey(Dutil.key2)
-    RegisterForKey(Dutil.key3)
-    RegisterForKey(Dutil.key4)
-    RegisterForKey(Dutil.key5)
-    RegisterForKey(Dutil.key6)
-    RegisterForKey(Dutil.key7)
-    RegisterForKey(Dutil.key8)
-    RegisterForKey(Dutil.key9)
-    RegisterForKey(Dutil.gamepadLeft)
-    RegisterForKey(Dutil.gamepadRight)
   endif
+  if version < 1.02
+    version = 1.02
+  endif
+  
+  RegisterForKey(Dutil.key0)
+  RegisterForKey(Dutil.key1)
+  RegisterForKey(Dutil.key2)
+  RegisterForKey(Dutil.key3)
+  RegisterForKey(Dutil.key4)
+  RegisterForKey(Dutil.key5)
+  RegisterForKey(Dutil.key6)
+  RegisterForKey(Dutil.key7)
+  RegisterForKey(Dutil.key8)
+  RegisterForKey(Dutil.key9)
+  RegisterForKey(Dutil.gamepadLeft)
+  RegisterForKey(Dutil.gamepadRight)
+  dbg("Registered all keys")
 
   if versionOld == version
     dbg("No updates found")
@@ -181,6 +186,8 @@ endevent
 state Ready
   event OnKeyDown(int keyCode)
     GotoState("Busy") ; only do one thing at once
+
+    dbg("Key pressed: " + keyCode)
 
     if keyCode == Dutil.key0
       onKeyDownLoadout(0)
