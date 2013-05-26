@@ -1,4 +1,11 @@
 ﻿[font=Calibri]
+[b][color=#d57c1d]Loadout 1.03[/color][/b]
+[i][color=#c2c2c2]Summary:[/color][/i]
+Loadout now properly unequips items and spells held in the hands like it already did for apparel, shouts and powers. There is no need to update if you explicitly used the old behavior. This update allows you to create a 'bare handed fighter' loadout for example. 
+[i][color=#c2c2c2]Changes:[/color][/i]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Unequips weapons, shields and spells if these slots are empty in a loadout
+
+
 [b][color=#d57c1d]Loadout 1.02[/color][/b]
 [i][color=#c2c2c2]Summary:[/color][/i]
 Multiple people reported that Loadout stopped working for them after the first time. This is a test version of Loadout that registers the keyboard/gamepad events every time you load a savegame. I also added additional debug statements. Enable debugging with the help of [url=http://skyrim.nexusmods.com/articles/1219]this guide[/url]. 

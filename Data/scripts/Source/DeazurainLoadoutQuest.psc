@@ -94,9 +94,9 @@ function restoreLoadout(int i)
   Actor p = Game.GetPlayer()
 
   ; Equip special cases, does not check if already equipped
-  setEquippedFormRightHand(p, loadoutRightHand[i])
-  setEquippedFormLeftHand(p, loadoutLeftHand[i])
-  setEquippedShoutOrPower(p, loadoutShout[i])
+  equipFormRightHand(p, loadoutRightHand[i])
+  equipFormLeftHand(p, loadoutLeftHand[i])
+  equipShoutOrPower(p, loadoutShout[i])
 
   FormList loadout = loadouts[i]
   Formlist current = LoadoutCurrent
@@ -157,8 +157,8 @@ event OnGameLoad()
     version = 1.01
     UnregisterForAllKeys(); unregister old keybindings
   endif
-  if version < 1.02
-    version = 1.02
+  if version < 1.03
+    version = 1.03
   endif
   
   RegisterForKey(Dutil.key0)

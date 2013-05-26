@@ -318,14 +318,26 @@ Form function getEquippedFormLeftHand(Actor a) global
   return a.getEquippedWeapon(true) ; left hand
 endfunction
 
-; Does not unequip when f == None
-function setEquippedFormLeftHand(Actor a, Form f) global
+; Unequips when f == None
+function equipFormLeftHand(Actor a, Form f) global
   if f
     if f.getType() == 22 ; formTypeSpell
       a.equipSpell(f as Spell, 0) ; left hand
     else
       a.equipItemEx(f, 2) ; left hand
     endif
+  else
+    unequipFormLeftHand(a)
+  endif
+endfunction
+
+function unequipFormLeftHand(Actor a) global
+  Form f = getEquippedFormLeftHand(a)
+  int t = f.getType()
+  if t == 22 ; formTypeSpell
+    a.unequipSpell(f as Spell, 0)
+  else
+    a.unequipItemEx(f, 2)
   endif
 endfunction
 
@@ -340,13 +352,25 @@ Form function getEquippedFormRightHand(Actor a) global
 endfunction
 
 ; Does not unequip when f = None
-function setEquippedFormRightHand(Actor a, Form f) global
+function equipFormRightHand(Actor a, Form f) global
   if f
     if f.getType() == 22 ; formTypeSpell
       a.equipSpell(f as Spell, 1) ; right hand
     else
       a.equipItemEx(f, 1) ; right hand
     endif
+  else
+    unequipFormRightHand(a)
+  endif
+endfunction
+
+function unequipFormRightHand(Actor a) global
+  Form f = getEquippedFormRightHand(a)
+  int t = f.getType()
+  if t == 22 ; formTypeSpell
+    a.unequipSpell(f as Spell, 1)
+  else
+    a.unequipItemEx(f, 1)
   endif
 endfunction
 
@@ -359,7 +383,7 @@ Form function getEquippedShoutOrPower(Actor a) global
 endfunction
 
 ; Unequips when f == None
-function setEquippedShoutOrPower(Actor a, Form f) global
+function equipShoutOrPower(Actor a, Form f) global
   if f
     if f.getType() == 22 ; formTypeSpell
       a.equipSpell(f as Spell, 2) ; Equip power
@@ -367,14 +391,18 @@ function setEquippedShoutOrPower(Actor a, Form f) global
       a.equipShout(f as Shout)
     endif
   else ; f == None so unequip
-    f = a.getEquippedShout()
-    if f ; has a shout equipped
-      a.unequipShout(f as Shout)
-    else ; might have a power equipped
-      f = a.getEquippedSpell(2)
-      if f ; has a power equipped
-        a.unequipSpell(f as Spell, 2) ; Don't know if this is possible, the wiki makes you think its not
-      endif
+    unequipShoutOrPower(a)
+  endif
+endfunction
+
+function unequipShoutOrPower(Actor a) global
+  Shout sh = a.getEquippedShout()
+  if sh ; has a shout equipped
+    a.unequipShout(sh)
+  else ; might have a power equipped
+    Spell sp = a.getEquippedSpell(2)
+    if sp ; has a power equipped
+      a.unequipSpell(sp, 2) ; Don't know if this is possible, the wiki makes you think its not
     endif
   endif
 endfunction
