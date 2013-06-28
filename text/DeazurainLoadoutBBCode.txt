@@ -1,16 +1,4 @@
-﻿[center][url=https://www.facebook.com/pages/Equip-Item-petition/150020581840717][img]http://oi40.tinypic.com/2rzyzyh.jpg[/img][/url][/center][size=0px][color=#313131]Petition[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
-I am starting a digital petition to solve a problem, a problem that has limited Skyrim plugin writers in their creativity. I believe that if we can gather enough people that we [/color][color=#d57c1d]can[/color][color=#afafaf] get the attention of Bethesda! Read the full article [url=http://skyrim.nexusmods.com/articles/1152/]here[/url]. 
-
-Thank you in advance on behalf of all the Skyrim modders!
-
-[/color][color=#d57c1d]Note[/color][color=#afafaf]: We moved to facebook to allow better communication and feedback to you, so if you've already endorsed the article I would like to ask you to like the facebook page as well. I'm very sorry that we made this transition so late but the number of views went up to 2000 in a single day!
-
-
-
-
-
-[/color][/size][/font]
-[center][img]http://oi50.tinypic.com/2wd7fd1.jpg[/img][/center]
+﻿[center][img]http://oi50.tinypic.com/2wd7fd1.jpg[/img][/center]
 [font=Book Antiqua][size=3][color=#afafaf]
 I believe that there is a lot of room for improvement on the Skyrim interface. Just take a look at one of the biggest mods SkyUI which enhances almost every aspect of the Skyrim interface. One system that has been bugging me for a long time is the favorites system and in my eyes, it could definitely be improved. 
 
@@ -70,9 +58,21 @@ Installing Loadout is very easy. There is one thing though that might make it a 
 
 [b]Installation steps[/b]
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Empty your favorites list in Skyrim and save. 
-[img]http://oi45.tinypic.com/290smkx.jpg[/img] Download the latest version of Loadout. To do this, go to the [url=http://skyrim.nexusmods.com/mods/34593/?tab=2&navtag=%2Fajax%2Fmodfiles%2F%3Fid%3D34593&pUp=1][i]Files[/i][/url] tab at the top of this page and then click on 'Download with Manager'. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Download the latest version of Loadout. To do this, go to the [url=http://skyrim.nexusmods.com/mods/34593/?tab=2&navtag=%2Fajax%2Fmodfiles%2F%3Fid%3D34593&pUp=1]files[/url] tab at the top of this page and then click on 'Download with Manager'. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Activate the plugin in NMM. 
 [img]http://oi45.tinypic.com/290smkx.jpg[/img] Launch Skyrim via SKSE, I believe this can be done via NMM. 
+
+
+
+
+
+[/color][/size][/font]
+[center][img]http://oi44.tinypic.com/2djgqb.jpg[/img][/center][size=0px][color=#313131]Uninstalling[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
+To uninstall, first disable the Loadout plugin in NMM. Then install Loadout Uninstaller which can be found under the [url=http://skyrim.nexusmods.com/mods/34593/?tab=2&navtag=%2Fajax%2Fmodfiles%2F%3Fid%3D34593&pUp=1]files tab[/url]. Be sure to activate the Loadout Uninstaller plugin in NMM after downloading it. 
+
+New savegames do not need the Loadout Uninstaller plugin because the only thing it does is unregister all Loadout key events and declare all functions that might be run because of traces of Loadout in savegames to not do anything. 
+
+To actually purge all mod data from your savegames you could take a look at [url=http://skyrim.nexusmods.com/mods/31675]this page[/url]. 
 
 
 
