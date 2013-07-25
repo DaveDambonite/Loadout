@@ -4,7 +4,7 @@
     },
     "plugin": {
         "name": "Loadout",
-        "version": "1.03",
-        "filename": "DeazurainLoadout"
+        "version": "2.0.0",
+        "filename": "Loadout"
     }
 }
