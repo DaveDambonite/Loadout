@@ -1,4 +1,17 @@
 ﻿[font=Calibri]
+[b][color=#d57c1d]Loadout 2.0.0[/color][/b]
+[i][color=#cc122b]Warning:[/color][/i] You have to follow the upgrade guide if you used an earlier version of Loadout to ensure your wellbeing!
+[i][color=#c2c2c2]Summary:[/color][/i]
+I have done a complete rewrite of Loadout because I finally have time for it, hurray for hollidays! Now, Loadout uses the new SKSE functionality that allows plugins to recognize small differences in items better. Items with the same base item but a different name will now be correctly distinguished from eachother. If you have a mod that allows you to wear multiple similar items such as rings there might be a small bug that causes Loadout to fail unequipping those items correctly. This currently cannot be fixed without further help of SKSE. It is extremely unlikely that it will affect your gameplay because if you can equip multiple items, you probably will! With the rewrite I have introduced some small optimizations. 
+
+I have changed the bind loadout hotkey modifier to CTRL instead of ALT because I wanted to be able to switch loadouts in combat where I have to use ALT in order to run. Since sneaking is toggled, in contrast with running which is done by holding, you can still switch loadouts while sneaking without accidentally saving a loadout. 
+[i][color=#c2c2c2]Changes:[/color][/i]
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Uses item type as well as item name recognition and therefore now allows you to have a loadout with a Gold Ring of Health and a different loadout with a Gold Ring of Stamina for example. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Changed 'save' hotkey to CTRL + 0-9 instead of ALT + 0-9
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Use regular Arrays instead of FormLists and wrote all the code in a single script for increased performance
+
+
+
 [b][color=#d57c1d]Loadout 1.03[/color][/b]
 [i][color=#c2c2c2]Summary:[/color][/i]
 Loadout now properly unequips items and spells held in the hands like it already did for apparel, shouts and powers. There is no need to update if you explicitly used the old behavior. This update allows you to create a 'bare handed fighter' loadout for example. 
