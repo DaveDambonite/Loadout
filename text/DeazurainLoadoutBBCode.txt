@@ -1,4 +1,4 @@
-﻿[center][img]http://oi50.tinypic.com/2wd7fd1.jpg[/img][/center]
+﻿[center][img]http://oi43.tinypic.com/2z4n474.jpg[/img][/center]
 [font=Book Antiqua][size=3][color=#afafaf]
 I believe that there is a lot of room for improvement on the Skyrim interface. Just take a look at one of the biggest mods SkyUI which enhances almost every aspect of the Skyrim interface. One system that has been bugging me for a long time is the favorites system and in my eyes, it could definitely be improved. 
 
@@ -6,7 +6,7 @@ Changing my weapons in combat is so unintuitive when you want to equip two diffe
 
 I enjoy putting my carefully collected equipment to their fullest potential. My Necklace of Haggling comes in handy when bartering with my friend Belethor in Whiterun and my Iron boots of Forging make sure that I'm able to forge the finest swords in all of Skyrim. Equipping my bartering outfit or my smithing gear through the apparel menu is a task that I would rather avoid. 
 
-So I started thinking of ways to improve the existing favorite mechanics. What if you could equip entire outfits complete with weapons, spells and shouts instead of single items? Loadout allows you to do just that!
+So I started thinking of ways to improve the existing favorite mechanics. What if you could equip entire outfits complete with weapons, spells and shouts instead of single items? Loadout allows you to do exactly that!
 
 Check out the video by [url=http://www.youtube.com/user/Brodual]Brodual[/url] below or alternatively from [url=http://www.youtube.com/watch?v=psT3pkYEVEs]insane0hflex[/url] to see Loadout in action:
 
@@ -25,7 +25,7 @@ Loadout is as of 13 April 2013 featured by Skyrim GEMS which, in essence, means 
 [center][img]http://oi50.tinypic.com/10oikow.jpg[/img][/center][size=0px][color=#313131]Usage[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
 My intentions are to make Loadout as efficiently to use as possible. This is why I have chosen to use hotkeys for saving and restoring [i]loadouts[/i]. I will use the term loadout to describe a complete set of apparel, weapons, spells and shouts. There are even some hotbuttons if you will when you use a controller! The keyboard hotkeys work as well when playing Skyrim with a controller mode. 
 
-[center][img]http://oi50.tinypic.com/2wpl46u.jpg[/img][/center]
+[center][img]http://oi40.tinypic.com/11rsk0i.jpg[/img][/center]
 
 There are 10 loadout slots available and they can be used through the number 0 to 9 on your keyboard. So to store your loadout in slot 2 press ALT + 2. To equip the loadout stored in slot 2, simply press 2. Slots 1 and 2 can be used as well if you have a controller. Holding the right thumb stick while pressing the left or right arrow button saves your current equipment in slot 1 or 2 respectively. Pressing the arrow buttons without holding the right thumb stick will restore the items. Note that it is possible to use your keyboard in combination with the controller!
 
@@ -67,6 +67,21 @@ Installing Loadout is very easy. There is one thing though that might make it a 
 
 
 [/color][/size][/font]
+[center][img]http://oi43.tinypic.com/2yv9atg.jpg[/img][/center][size=0px][color=#313131]Upgrading[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
+Because I did a clean rewrite, upgrading from Loadout 0.x or 1.x to 2.x requires you to take some extra steps. If you are starting a new game or if you have never used Loadout before you should not do this. 
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Download the Loadout Uninstaller which should overwrite pre 2.0.0 Loadout versions
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Activate the Loadout Uninstaller plugin
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Make sure Steam is started before launching Skyrim
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Start Skyrim through the SKSE launcher and load your game
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] A message should appear: "You have uninstalled Loadout"
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Save
+[img]http://oi45.tinypic.com/290smkx.jpg[/img] Disable Loadout Uninstaller and install the new Loadout like you normally would. 
+
+
+
+
+
+[/color][/size][/font]
 [center][img]http://oi44.tinypic.com/2djgqb.jpg[/img][/center][size=0px][color=#313131]Uninstalling[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
 To uninstall, first disable the Loadout plugin in NMM. Then install Loadout Uninstaller which can be found under the [url=http://skyrim.nexusmods.com/mods/34593/?tab=2&navtag=%2Fajax%2Fmodfiles%2F%3Fid%3D34593&pUp=1]files tab[/url]. Be sure to activate the Loadout Uninstaller plugin in NMM after downloading it. 
 
@@ -95,7 +110,7 @@ This section contains requested features and confirmed bugs. Check out [url=http
 [center][img]http://oi50.tinypic.com/20rk3cy.jpg[/img][/center][size=0px][color=#313131]Resources[/color][/size][font=Book Antiqua][size=3][color=#afafaf]
 I have listed some additional resources you might find useful here. 
 [url=http://skyrim.nexusmods.com/articles/1160/][img]http://i1068.photobucket.com/albums/u456/deazurain/link_changelog.png[/img][/url][url=https://github.com/DaveDambonite/Loadout][img]http://i1068.photobucket.com/albums/u456/deazurain/link_github.png[/img][/url]
-[url=http://skyrim.nexusmods.com/articles/1152/][img]http://i1068.photobucket.com/albums/u456/deazurain/link_petition.png[/img][/url]
+[url=http://skyrim.nexusmods.com/articles/1152/][img]http://i43.tinypic.com/fdem8n.jpg[/img][/url][url=http://skyrim.nexusmods.com/articles/1219/][img]http://i42.tinypic.com/4tlq1y.jpg[/img][/url]
 
 
 
